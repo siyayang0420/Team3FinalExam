@@ -7,7 +7,7 @@ import Default_Message from './Default_Message';
 import Default_Message_Board from "./Default_Message_Board";
 import ButtonAnimation from './ButtonAnimation';
 import Default_Send_Bar from './Default_Send_Bar';
-
+import Profile from './Profile';
 
 
   
@@ -15,22 +15,30 @@ import Default_Send_Bar from './Default_Send_Bar';
   .add('Default TextInput', ()=>{
     return<Default_TextInput/>
   })
-storiesOf('final_comps', module)
+
   .add('Default Message', ()=>{
     return<Default_Message/>
-})
+  })
 
 .add('Default Send Bar', ()=>{
   return<Default_Send_Bar/>
-})
+  })
   .add('Default Message Board', ()=>{
     return<Default_Message_Board/>
   })
+
+  .add('button', () => {
+    return <ButtonAnimation />
+   });
+
+   storiesOf('combined_comps', module)
+  .add('Default Profile', ()=>{
+    return<Profile/>
+  })
+
   .add('button', () => {
     return <ButtonAnimation />
    })
    .add('Default Image', () => {
     return <DefaultImage />
    })
-
- 
