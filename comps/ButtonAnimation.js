@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View, Text, Animated, Image, TouchableOpacity} from 'react-native';
 import styles from '../styles/styles';
 
-function ButtonAnimation(){
+function ButtonAnimation(props){
 
     const [dim] = useState(new Animated.Value(50));
    
@@ -27,7 +27,7 @@ useEffect(()=>{
                     style={{width: 50, height: 50}}
                 
                 />
-                <Text>default button</Text>
+                <Text>{props.title}</Text>
                
             </TouchableOpacity>
             

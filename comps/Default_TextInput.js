@@ -19,7 +19,7 @@ function Default_TextInput(props) {
     }}>
       <Animated.View
       style={{
-        marginTop:300,
+        //marginTop:300,
         width:widScale
     }}
       >

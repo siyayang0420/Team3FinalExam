@@ -6,6 +6,8 @@ import Default_TextInput from './Default_TextInput';
 import Default_Message from './Default_Message';
 import Defaut_Message_Board from "./Defaut_Message_Board";
 import ButtonAnimation from './ButtonAnimation';
+import Profile from './Profile';
+
 
 
   
@@ -13,10 +15,14 @@ import ButtonAnimation from './ButtonAnimation';
   .add('Default TextInput', ()=>{
     return<Default_TextInput/>
   })
-storiesOf('final_comps', module)
-  .add('Default Message', ()=>{
-    return<Default_Message/>
-})
+  .add('button', () => {
+    return <ButtonAnimation />
+   });
+
+   storiesOf('combined_comps', module)
+  .add('Default Profile', ()=>{
+    return<Profile/>
+  })
 
   .add('Defaut Message Board', ()=>{
     return<Defaut_Message_Board/>
@@ -27,4 +33,5 @@ storiesOf('final_comps', module)
    .add('Default Image', () => {
     return <DefaultImage />
    })
+
 
