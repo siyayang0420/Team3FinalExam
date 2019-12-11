@@ -46,8 +46,7 @@ function Default_TextInput(props) {
             shadowRadius:10,
             shadowOpacity:0.1,
           }}
-          placeholder={"Default placeholder"}
-          //onChangeText={(text)=>{}}
+          placeholder={props.placeholderTxt}
         >
             </TextInput>
       </Animated.View>
