@@ -6,10 +6,6 @@ import Default_TextInput from './Default_TextInput';
 import Defaut_Message_Board from "./Defaut_Message_Board";
 import ButtonAnimation from './ButtonAnimation';
 
-
-    
-
-
   
   storiesOf('final_comps', module)
   .add('Default TextInput', ()=>{
@@ -21,11 +17,7 @@ import ButtonAnimation from './ButtonAnimation';
   .add('button', () => {
     return <ButtonAnimation />
    })
-    .add("DefaultImage", ()=>{
-      return
-          <DefaultImage 
-          title="Whooop"
-          />
-      
-  });
+   .add('Default Image', () => {
+    return <DefaultImage />
+   })
 

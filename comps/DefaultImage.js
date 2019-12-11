@@ -2,50 +2,46 @@ import React, {useEffect, useState} from 'react';
 import {View, Text, Button, Image, Animated} from 'react-native';
 
 function DefaultImage(){
-
-const [op, setOp] = useState(new Animated.Value(1));
-const [img, setImg] = useState(true);
-
-
-
-    const style = {
-    justofyContent:'center',
-    alignItems:'center',
-    borderRadius:20,
-    margin:200
-}
-
+const [aniW] = useState(new Animated.Value(10));
+const [aniH] = useState(new Animated.Value(10));
 //not sure if information is passed down properly
 
 useEffect(()=>{
-    Animated.timing(
-        op,
-        {
-            toValue:1,
-            duration:3000
-        }
+  Animated.timing(
+      aniW,
+      {
+        toValue:50,
+        duration:1000
+      },
+      aniH,
+      {
+        toValue:50,
+        duration:1000
+      }
     ).start();
 }, []);
 
-useEffect(()=>{
-    Animated.timing(
-      op,
-      {
-        toValue:0,
-        duration:3000
-      }
-    ).start();
-  },{img});
-
-
     return(
-        <Animated.View style={{opacity:op}}>
-            <Image
-          style={{width: 150, height: 150}}
+        <Animated.View 
+        style={{
+        width:aniW, 
+        height:aniH, 
+        // margin:100
+        }}>
+          <Image
+          style={{
+          width:50,
+          height:50,
+          borderRadius:100,
+          borderColor:'green',
+          borderWidth:2
+        }}
           source={{uri: 'https://ntiboilers.com/wp-content/uploads/2018/09/default-placeholder.png'}}
         />
+       
         </Animated.View>
     );
 }
+
 
 export default DefaultImage;
