@@ -6,7 +6,7 @@ import DefaultImage from './DefaultImage';
 
 
 function Profile(props){
-    const [title, setTitle] = useState('save');
+    const [title, setTitle] = useState('');
     return(
         <View style={{marginTop:100}}>
              <DefaultImage style={{marginLeft: 50}}/>
@@ -19,7 +19,7 @@ function Profile(props){
                 />
                 
                 <ButtonAnimation 
-                title={title}
+                title={"save"}
 
                 />
             </View>
