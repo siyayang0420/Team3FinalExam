@@ -7,6 +7,8 @@
  */
 
 import React from 'react';
+import MainMenu from './comps/MainMenu';
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -15,15 +17,21 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import Main from './comps/Main';
+import TabBar from './comps/TabBar';
 
-function App(){
-  return(
-    <View>
-      <Main/>
+
+const App = () => {
+
+
+  return (
+    <View style={{justifyContent:'center', flex:1 }}>
+      <MainMenu />
+
     </View>
+  
   )
 }
 
- export default App;
-//export default from './storybook';
+
+//  export default App;
+export default from './storybook';

@@ -8,6 +8,8 @@ import Default_Message_Board from "./Default_Message_Board";
 import ButtonAnimation from './ButtonAnimation';
 import Default_Send_Bar from './Default_Send_Bar';
 import Profile from './Profile';
+import TabBar from './TabBar';
+import MainMenu from './MainMenu';
 
 
   
@@ -42,3 +44,15 @@ import Profile from './Profile';
    .add('Default Image', () => {
     return <DefaultImage />
    })
+   
+storiesOf("Tab Bars", module)  
+.add('TabBar', ()=>{
+    return (
+<TabBar/>    ) 
+ })
+.add('MainMenu', ()=>{
+    return (
+<MainMenu/>    ) 
+ }
+);
+
