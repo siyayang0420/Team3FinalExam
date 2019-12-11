@@ -7,22 +7,14 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View, Text} from 'react-native';
 import Main from './comps/Main'
 
-function App(){
-  return(
-    <View>
-      <Main/>
+const App = () => {
+  return (
+    <View style={{justifyContent:'center', flex:1}}>
+      <Main />
     </View>
-  )
-}
-
+  );
+};
 export default App;
