@@ -1,3 +1,4 @@
+
 import React, {useState, useEffect} from 'react';
 import {Text, View, Animated,Image} from 'react-native';
 
@@ -27,8 +28,11 @@ function Default_Message(){
             </View>
             <Text>guest:default message</Text>
         </Animated.View>      
+
     )
 }
 
 
-export default Default_Message;
+
+export default DefaultMessage;
+
