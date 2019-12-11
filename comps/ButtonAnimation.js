@@ -15,8 +15,9 @@ useEffect(()=>{
         }
       ).start();
 }, []);
+
     return(
-        <Animated.View style={{flex:1}, {width:dim}}>
+        <Animated.View style={{flex:1, width:dim, height:dim}}>
             
             <TouchableOpacity style={styles.NButton}            >
                 
