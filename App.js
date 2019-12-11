@@ -21,13 +21,13 @@ import TabBar from './comps/TabBar';
 
 const App = () => {
   return (
-    <View style={{justifyContent:'center', }}>
+    <View style={{justifyContent:'center', flex:1 }}>
       <TabBar />
     </View>
 
   )
 }
 
-//export default App;
-export default from './storybook';
+export default App;
+// export default from './storybook';
 
