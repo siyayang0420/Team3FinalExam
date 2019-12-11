@@ -78,10 +78,10 @@ function Defaut_Message_Board(props) {
                 style={{
                     width:30,
                     height:30,
-                    zIndex:100,
+                    // zIndex:100,
                     // backgroundColor:'#000000'
                 }}
-                source={{uir:'https://static.thenounproject.com/png/68669-200.png'}}
+                source={{uri:'https://static.thenounproject.com/png/68669-200.png'}}
                 />
                 <Text style={{
                     color:"#ffffff"
