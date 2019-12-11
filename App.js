@@ -15,7 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import Main from './comps/Main'
+import Main from './comps/Main';
 
 function App(){
   return(
