@@ -3,7 +3,7 @@ import {View, Text, Button, TouchableOpacity, Animated, Image } from 'react-nati
 import axios from 'axios';
 
 
-function TabBar() {
+function TabBar({ title }) {
   const [op] = useState(new Animated.Value(0));
 
   const [height] = useState(new Animated.Value(0));
@@ -23,7 +23,6 @@ function TabBar() {
       outputRange: [60, 140]}
       )
  
-
   //run when the component loads
 
   useEffect(()=>{
@@ -56,7 +55,7 @@ function TabBar() {
   //run when text is changed
 
   return (
-    <View style={{flex:1, flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
+    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
     <Animated.View style={{width:my_width, height:my_hight,  justifyContent:'center', alignItems:'center',backgroundColor:my_bg, borderTopLeftRadius:40,  borderTopRightRadius:40, opacity:op }}>
    
       <Image style={{width:25, height:25}} source={require("../Assets/21837-200.png")}></Image>
@@ -91,10 +90,14 @@ function TabBar() {
         click = 0;      }
      
       }}>
-        <Text style={{width:"100%", textAlign:'center'}}>Click</Text>
+<Text style={{width:"100%", textAlign:'center'}}>{title}</Text>
       </TouchableOpacity>
     </Animated.View>
     </View>
   );
+}; 
+TabBar.defaultProps = {
+  title:"Default Title",
+  onPress: () => {},
 };
 export default TabBar;

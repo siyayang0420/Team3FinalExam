@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import MainMenu from './comps/MainMenu';
 
 import {
   SafeAreaView,
@@ -22,12 +23,11 @@ import TabBar from './comps/TabBar';
 const App = () => {
   return (
     <View style={{justifyContent:'center', flex:1 }}>
-      <TabBar />
+      <MainMenu />
     </View>
-
   )
 }
 
-export default App;
-// export default from './storybook';
+// export default App;
+export default from './storybook';
 
