@@ -4,14 +4,39 @@ import TabBar from '../comps/TabBar';
 
 
 function MainMenu(){
+    const [background1, setBackground1] = useState("blue");
+    const [background2, setBackground2] = useState("blue");
+    const [background3, setBackground3] = useState("blue");
     return (
         <View style={{flex:1, flexDirection:'row'}}>
+           
             <TabBar
-            title={'header 1'} />
+            key={1}
+            title={'header 1'}
+            Press={()=> {
+            setBackground1('red')
+             setBackground2('blue') 
+             setBackground3('blue')}}
+            bg={background1}  />
+       
             <TabBar
-            title={'header 2'} />
+            key={2}
+            title={'header 2'}
+            Press={()=> {
+                setBackground2('red')
+                setBackground3('blue')
+                setBackground1('blue')}}
+            bg={background2}  />
+       
             <TabBar
-            title={'header 3'} />
+            key={3}
+            title={'header 3'}
+            Press={()=> {
+            setBackground3('red')
+            setBackground2('blue')
+            setBackground1('blue')} }
+            bg={background3}  />
+       
         </View>
     )
 }
