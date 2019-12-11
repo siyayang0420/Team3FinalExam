@@ -5,12 +5,24 @@ import DefaultImage from './DefaultImage';
 import Default_TextInput from './Default_TextInput';
 import Defaut_Message_Board from "./Defaut_Message_Board";
 import ButtonAnimation from './ButtonAnimation';
+import Profile from './Profile';
+
 
   
   storiesOf('final_comps', module)
   .add('Default TextInput', ()=>{
     return<Default_TextInput/>
   })
+
+  .add('button', () => {
+    return <ButtonAnimation />
+   });
+
+   storiesOf('combined_comps', module)
+  .add('Default Profile', ()=>{
+    return<Profile/>
+  })
+
   .add('Defaut Message Board', ()=>{
     return<Defaut_Message_Board/>
   })
@@ -20,4 +32,5 @@ import ButtonAnimation from './ButtonAnimation';
    .add('Default Image', () => {
     return <DefaultImage />
    })
+
 
