@@ -8,7 +8,7 @@ import {
   TouchableOpacity
 } from "react-native";
 
-function Defaut_Message_Board(props) {
+function Default_Send_Bar(props) {
   const [widScale] = useState(new Animated.Value(0));
   useEffect(() => {
     Animated.timing(widScale, {
@@ -100,4 +100,4 @@ function Defaut_Message_Board(props) {
   );
 }
 
-export default Defaut_Message_Board;
+export default Default_Send_Bar;

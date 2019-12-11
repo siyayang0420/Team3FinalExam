@@ -2,31 +2,43 @@
 import React, {useState, useEffect} from 'react';
 import {Text, View, Animated,Image} from 'react-native';
 
-function Default_Message(){
+import DefaultImage from './DefaultImage';
+function Default_Message(props){
 
-    // const [op_value] = useState(new Animated.Value(1));
+    const [op] = useState(new Animated.Value(0));
+
+    useEffect(()=>{
+        Animated.timing(
+            op,
+            {
+              toValue:1,
+              duration:1000
+            },
+          ).start();
+      }, []);
 
     return(
         <Animated.View 
         style={{
             justifyContent:'center',
             alignItems:'center',
+            marginTop:200,
+            opacity:op
         }}  
         >
-            <View>
-
-            <Image 
-                source={{uri: 'https://ntiboilers.com/wp-content/uploads/2018/09/default-placeholder.png'}}
-                style={{
-                    width: 40, 
-                    height: 40,
-                    position:"absolute",
-                    left:100,
-                    borderRadius:20,
-                }}
-            />
+            <View style={{
+                width:300,
+                height:100,
+                backgroundColor:'#fab',
+                borderRadius:20,
+                justifyContent:'center',
+                alignItems:'center',
+                flexDirection:'row'
+            }}>
+            <DefaultImage/>
+            <Text>guest:{props.message}default message</Text>
             </View>
-            <Text>guest:default message</Text>
+            
         </Animated.View>      
 
     )
@@ -34,5 +46,6 @@ function Default_Message(){
 
 
 
-export default DefaultMessage;
+export default Default_Message;
+
 
