@@ -21,10 +21,14 @@ import TabBar from './comps/TabBar';
 
 
 const App = () => {
+
+
   return (
     <View style={{justifyContent:'center', flex:1 }}>
       <MainMenu />
+
     </View>
+  
   )
 }
 

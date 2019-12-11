@@ -3,13 +3,15 @@ import {View, Text, Button, TouchableOpacity, Animated, Image } from 'react-nati
 import TabBar from '../comps/TabBar';
 
 
-function MainMenu(){
+function MainMenu({Tabs}){
     const [background1, setBackground1] = useState("blue");
     const [background2, setBackground2] = useState("blue");
     const [background3, setBackground3] = useState("blue");
     return (
         <View style={{flex:1, flexDirection:'row'}}>
            
+
+
             <TabBar
             key={1}
             title={'header 1'}
