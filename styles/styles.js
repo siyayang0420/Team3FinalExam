@@ -5,6 +5,16 @@ var styles = StyleSheet.create({
 
 
     //Nicole
+    NButton:{
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:25,
+        backgroundColor:"pink",
+        marginTop: 50,
+       
+       
+        
+    }
 
 
 
