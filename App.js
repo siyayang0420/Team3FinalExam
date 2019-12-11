@@ -21,6 +21,7 @@ function App(){
   return(
     <View>
       <Main/>
+      <Text>Hi</Text>
     </View>
   )
 }
