@@ -7,14 +7,27 @@
  */
 
 import React from 'react';
-import {View, Text} from 'react-native';
-import Main from './comps/Main'
+
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
+import TabBar from './comps/TabBar';
+
 
 const App = () => {
   return (
-    <View style={{justifyContent:'center', flex:1}}>
-      <Main />
+    <View style={{justifyContent:'center', }}>
+      <TabBar />
     </View>
-  );
-};
-export default App;
+
+  )
+}
+
+//export default App;
+export default from './storybook';
+
