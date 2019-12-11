@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, TextInput, Animated,Image,Icon } from "react-native";
 
-function Default_TextInput() {
+function Default_TextInput(props) {
     const [widScale] = useState(new Animated.Value(0));
     useEffect(()=>{
         Animated.timing(
