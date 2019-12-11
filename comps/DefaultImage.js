@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, Button, Image, Animated} from 'react-native';
 
-function DefaultImage(){
+function DefaultImage(props){
 const [aniW] = useState(new Animated.Value(10));
 const [aniH] = useState(new Animated.Value(10));
 //not sure if information is passed down properly
@@ -48,7 +48,8 @@ useEffect(()=>{
           borderColor:'green',
           borderWidth:2,
         }}
-          source={{uri: 'https://ntiboilers.com/wp-content/uploads/2018/09/default-placeholder.png'}}
+          source={{uri:'https://ntiboilers.com/wp-content/uploads/2018/09/default-placeholder.png'}}
+          source={uri=props.uri}
         />
         </View>
        
