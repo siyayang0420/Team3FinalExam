@@ -1,6 +1,7 @@
 
 import React, {useState, useEffect} from 'react';
 import {Text, View, Animated,Image} from 'react-native';
+
 import DefaultImage from './DefaultImage';
 function Default_Message(props){
 
@@ -15,7 +16,6 @@ function Default_Message(props){
             },
           ).start();
       }, []);
-
 
     return(
         <Animated.View 
@@ -47,4 +47,5 @@ function Default_Message(props){
 
 
 export default Default_Message;
+
 
