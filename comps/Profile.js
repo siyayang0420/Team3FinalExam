@@ -5,6 +5,7 @@ import ButtonAnimation from './ButtonAnimation';
 import DefaultImage from './DefaultImage';
 
 
+
 function Profile(props){
     const [title, setTitle] = useState('');
     const [placeholderTxt, SetPlaceholderTxt] = useState('');
@@ -21,6 +22,7 @@ function Profile(props){
             }
         }
         var r = await axios.post("https://adifetch.herokuapp.com/post", obj);
+        ReadUsers();
     }
 
     const ReadUsers = async()=>{
