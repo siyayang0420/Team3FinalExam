@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import MessageBoard from './MessageBoard';
+import Profile from './Profile';
 
 function Main(){
     return(
         <View>  
-            <MessageBoard />
+            <Profile />
             
         </View>
     )

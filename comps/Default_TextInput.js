@@ -19,7 +19,7 @@ function Default_TextInput() {
     }}>
       <Animated.View
       style={{
-        marginTop:300,
+        //marginTop:300,
         width:widScale
     }}
       >
@@ -47,6 +47,7 @@ function Default_TextInput() {
             shadowOpacity:0.1,
           }}
           placeholder={"Default placeholder"}
+          //onChangeText={(text)=>{}}
         >
             </TextInput>
       </Animated.View>
